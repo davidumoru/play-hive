@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import Wallet from "./Wallet";
 
 const Navbar = () => {
@@ -10,21 +10,17 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <NavLink to="/Home">
-        <h1 className="logo text-3xl font-bold text-pink-500">awujo.</h1>
-      </NavLink>
       <div className="navbar flex flex-col sm:flex-row justify-between items-center h-24 mx-auto px-4 sm:px-8 text-black">
         <div className="flex items-center">
-          <NavLink to="./Home">
+          <Link href="./Home">
             <h1 className="text-3xl font-bold text-pink-500 mr-6">awujo.</h1>
-          </NavLink>
+          </Link>
           <ul className="flex items-center ml-4">
             <li className="p-4 text-white font-normal transition-colors hover:text-pink-500 focus:text-pink-500">
-              <NavLink to="/Home">Home</NavLink>
+              <Link href="/Home">Home</Link>
             </li>
             <li className="p-4 text-white font-normal transition-colors hover:text-pink-500 focus:text-pink-500">
-              <NavLink to="/Games">Games</NavLink>
+              <Link href="/Games">Games</Link>
             </li>
             <li className="p-4 text-white font-normal transition-colors hover:text-pink-500 focus:text-pink-500">
               Leaderboard
@@ -72,7 +68,6 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </>
   );
 };
 
