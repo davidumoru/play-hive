@@ -1,3 +1,5 @@
+"use client"; // This is a client component
+
 import { Typography } from "@material-tailwind/react";
 
 export default function Example() {
