@@ -4,9 +4,9 @@ import { Typography } from "@material-tailwind/react";
 
 export default function Example() {
   return (
-    <footer className="w-full p-8">
+    <footer className="w-full p-8 mt-[30rem]">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
-        <h1 className="text-3xl font-bold text-pink-500 mr-6">awujo.</h1>
+        <h1 className="text-3xl font-bold text-pink-500 mr-6">playHive.</h1>
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Typography
