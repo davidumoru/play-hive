@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import dynamic from "next/dynamic";
-
-const Wallet = dynamic(() => import("./Wallet"), { ssr: false });
+import Wallet from "./Wallet";
 
 const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
