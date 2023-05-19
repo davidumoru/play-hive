@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-const about = () => {
+const About = () => {
     return (
         <>
             <h1 className="text-4xl font-bold mb-4">About Play Hive</h1>
@@ -18,4 +18,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
