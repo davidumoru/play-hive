@@ -10,10 +10,10 @@ import {
   MenuItem,
 } from "@material-tailwind/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import metamask from "../images/Metamask-icon.svg";
-import coinbase from "../images/Coinbase-icon-symbol-1.svg";
-import connect from "../images/walletconnect-seeklogo.com.svg"
-import trust from "../images/trust-wallet-token-twt-seeklogo.com.svg";
+import metamask from "../public/images/Metamask-icon.svg";
+import coinbase from "../public/images/Coinbase-icon-symbol-1.svg";
+import connect from "../public/images/walletconnect-seeklogo.com.svg"
+import trust from "../public/images/trust-wallet-token-twt-seeklogo.com.svg";
  
 export default function Wallet() {
   const [open, setOpen] = React.useState(false);
