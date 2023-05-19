@@ -1,14 +1,20 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import axios from "axios";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-} from "@material-tailwind/react";
+import { Card, CardHeader, CardBody, Typography } from "@material-tailwind/react";
 
-function GameCard({ game }) {
+interface Game {
+  id: number;
+  gameFlyer: string;
+  gameTitle: string;
+  description: string;
+}
+
+interface GameCardProps {
+  game: Game;
+}
+
+function GameCard({ game }: GameCardProps) {
   return (
     <Link href={`/GameRoom?id=${game.id}`}>
       <Card className="bg-gray-900 w-96 mx-2 my-4">
@@ -33,7 +39,7 @@ function GameCard({ game }) {
 }
 
 function GameCards() {
-  const [games, setGames] = useState([]);
+  const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
     axios

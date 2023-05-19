@@ -2,7 +2,7 @@
 
 import { Typography } from "@material-tailwind/react";
 
-export default function Example() {
+const Example = () => {
   return (
     <footer className="w-full p-8 mt-[30rem]">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
@@ -57,3 +57,5 @@ export default function Example() {
     </footer>
   );
 }
+
+export default Example;

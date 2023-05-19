@@ -6,8 +6,14 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 
+interface TabData {
+  label: string;
+  value: string;
+  desc?: string;
+}
+
 export default function GameTabs() {
-  const data = [
+  const data: TabData[] = [
     {
       label: "Name",
       value: "Name",
@@ -16,17 +22,14 @@ export default function GameTabs() {
       label: "Genre",
       value: "Genre",
     },
-
     {
       label: "Popularity",
       value: "Popularity",
     },
-
     {
       label: "Release",
       value: "Release",
     },
-
     {
       label: "Developer",
       value: "Developer",
