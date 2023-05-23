@@ -25,3 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+  .logo {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .logo {
+    display: none;
+  }
+}
